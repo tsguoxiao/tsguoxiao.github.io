@@ -12,8 +12,7 @@
 var word=0;
 var words=["对不起","此人不会HTML5","请下次再访问"]
 function change(){
-var main=document.getElementById("main");
-main.innerHTML=words[word];
+document.getElementById("main").innerHTML=words[word];
 word=word+1;
 if(word==3){word=0;}
 }
