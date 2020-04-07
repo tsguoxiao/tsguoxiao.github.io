@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>郭潇主页</title>
+<meta cherset="utf-8">
+<link rel="icon" href="icon.ico">
+</head>
+<body>
+<h1>郭潇主页</h1>
+<h2 id="main">加载中......</h2>
+<script>
+var word=0;
+var words=["对不起","此人不会HTML5","请下次再访问"]
+function change(){
+var main=document.getElementById("main");
+main.innerHTML=words[word];
+word=word+1;
+if(word==3){word=0;}
+}
+setInterval(change,1000);
+</body>
+</html>
